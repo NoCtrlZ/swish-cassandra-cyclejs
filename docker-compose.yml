@@ -1,0 +1,12 @@
+version: '3'
+services:
+  swish:
+    build: ./swish
+    container_name: swish
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./swish:/app
+      - /app/target
+    ports:
+      - "3000:3000"
