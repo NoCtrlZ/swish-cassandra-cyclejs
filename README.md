@@ -8,6 +8,11 @@ Frontend|Typescript|Cyclejs
 Backend|Rust|Swish
 Database||Cassandra
 
+## Setup
+```
+$ docker-compose up
+```
+
 ## Cassandra
 ### DBMS Operation
 ```
