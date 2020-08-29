@@ -10,3 +10,12 @@ services:
       - /app/target
     ports:
       - "3000:3000"
+  cassandra:
+    build: ./cassandra
+    container_name: cassandra
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./cassandra:/app
+    ports:
+      - "9042:9042"
