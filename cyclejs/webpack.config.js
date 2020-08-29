@@ -11,5 +11,9 @@ module.exports = {
         filename: 'bundle.[hash].js',
         path: appPath('build'),
         publicPath: '/'
+    },
+    devServer: {
+        compress: true,
+        host: '0.0.0.0'
     }
 };

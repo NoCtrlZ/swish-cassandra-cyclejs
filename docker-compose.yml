@@ -19,3 +19,13 @@ services:
       - ./cassandra:/app
     ports:
       - "9042:9042"
+  cyclejs:
+    build: ./cyclejs
+    container_name: cyclejs
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./cyclejs:/app
+      - /app/node_modules
+    ports:
+      - "8080:8080"
